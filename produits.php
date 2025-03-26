@@ -21,12 +21,14 @@ $produits = $pdo->query("SELECT * FROM produits")->fetchAll();
             <?php foreach ($produits as $produit): ?>
                 <div class="col-md-4">
                     <div class="card mb-4">
+                        <img src="img\image.png" alt="" class="card-img-top">
                         <div class="card-body text-center">
                             <h5 class="card-title"><?= htmlspecialchars($produit['nom']) ?></h5>
                             <p class="card-text">
                                 Prix : <strong><?= number_format($produit['prix'], 2) ?> FCFA</strong><br>
                                 Stock : <strong><?= $produit['stock'] ?> unités</strong>
                             </p>
+                            <img src="image.png" alt="" class="img">
                             <a href="ajouterCommande.php?id=<?= $produit['id_produit'] ?>" class="btn btn-primary">
                                 Commander
                             </a>
