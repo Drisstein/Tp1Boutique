@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Insérer les produits commandés
         foreach ($_POST['produits'] as $produit) {
-            $id_produit = $produit['id'];
+            $id_produit = $produit['id_produit'];
             $quantite = $produit['quantite'];
 
             // Vérifier si la quantité demandée est disponible en stock
