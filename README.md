@@ -1,4 +1,4 @@
-Sure! Here is a basic README template for your project. You can customize it further based on the specific details and requirements of your project.
+
 
 ```markdown
 # Tp1Boutique
